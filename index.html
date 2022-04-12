@@ -11,9 +11,14 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="board">
-
+    <div class="container">        
+        <div class="board"> 
+        </div>
+        <div class="settings">
+            <button class="clear">Clear</button>
+            <input type="range" min="8" value="16" max="72" step="8" oninput="setSize(value)">
+            <span class="show-size">16</span>
+            <button class="set">Set</button>
         </div>
     </div>
 </body>
