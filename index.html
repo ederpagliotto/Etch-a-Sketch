@@ -11,19 +11,31 @@
 </head>
 
 <body>
-    <div class="container">        
-        <div class="board"> 
+    <div class="name">
+        <h1>Etch-a-Sketch</h1>
+    </div>    
+    
+        <div class="container"> 
+            <div class="board-container">
+                <div class="board"> 
+                </div>
+            </div>   
+            
+            <div class="settings">
+                <div class="set-size">                    
+                    <input type="range" min="8" value="16" max="72" step="8" oninput="setSize(value)">
+                    <span class="show-size">16</span>
+                </div>
+                
+                <div class="buttons">
+                    <button class="set">Set</button>
+                    <button class="clear">Clear</button>
+                    <button class="black" onclick="changeColor('black')">Black</button>
+                    <button class="eraser" onclick="changeColor('white')">Eraser</button>
+                    <button class="color" onclick="changeColor('random')">Random Color</button>
+                </div>
+            </div>
         </div>
-        <div class="settings">
-            <button class="clear">Clear</button>
-            <input type="range" min="8" value="16" max="72" step="8" oninput="setSize(value)">
-            <span class="show-size">16</span>
-            <button class="set">Set</button>
-            <button class="black" onclick="changeColor('black')">Black</button>
-            <button class="eraser" onclick="changeColor('white')">Eraser</button>
-            <button class="color" onclick="changeColor('random')">Random Color</button>
-        </div>
-    </div>
 </body>
 
 </html>
