@@ -1,3 +1,7 @@
+body {
+    background: #373a37;
+}
+
 .name {
     display: flex;
     flex-direction: row;
@@ -5,7 +9,9 @@
     justify-content: center;
 }
 
-
+h1 {
+    text-shadow: 2px 2px #4a4b4a;
+}
 
 .container {
     display: flex;
@@ -23,22 +29,20 @@
     height: 500px;
     display: grid;
     border: 1px solid rgb(138, 138, 138);
-}
-
-.board-div{
-    background-color: "white";
-    
+    box-shadow: 5px 5px 5px black;
 }
 
 .settings {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     align-content: center;
+    margin-top: 40px;
 }
 
 .set-size {
 display: flex;
+flex-direction: column-reverse;
 }
 
 button {
@@ -51,11 +55,11 @@ button {
     display: inline-block;
     font-size: 10px;
     transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 1px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 button:hover {
-    background-color: #4CAF50;
+    background-color: black;
   color: white;
 }
 
@@ -71,8 +75,11 @@ button:hover {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 10px;
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
 }
+
+
+  
+  

@@ -14,11 +14,12 @@ function populateBoard(size){
         square.classList.add("board-div")
         square.addEventListener("mouseover", colorSquare);
         board.insertAdjacentElement("beforeend", square);
+        square.style.backgroundColor = "white";
     }
 }
 
 //Default board size
-populateBoard(16);
+populateBoard(40);
 
 //Change board size according to value in .show-size element
 document.querySelector(".set").addEventListener("click", () => {
